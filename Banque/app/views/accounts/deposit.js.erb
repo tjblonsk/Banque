@@ -1,0 +1,6 @@
+$('#accounts').remove();
+$('#deposit').hide();
+// $('#transfer/withdraw').hide();
+
+$('#depositForm').html("<%=j render 'deposit' %>").show();
+$('#depositAmountButton').click(AccountApp.addDepositAmount);

@@ -1,0 +1,4 @@
+
+<% @accounts.each do | account| %>
+$('#accounts').append($('<li>Account: ' + <%= account.id %> + ', balance: ' + <%= account.balance %> + '</li>'));
+<% end %>
